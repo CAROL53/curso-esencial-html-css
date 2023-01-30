@@ -46,7 +46,9 @@ a {
     color: var(--white30);
 }
 
-.header {}
+.header {
+    
+}
 
 .header-content {
     padding-inline: 20px;
@@ -259,31 +261,28 @@ blockquote p {
     color: var(--white20);
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 1366px) {
     .hero {
-        block-size: 350px;
+      block-size: 350px;
     }
 
     .header {
         position: sticky;
         inset-block-start: -45px;
-    }
-
-    .header-content {
+      }
+      .header-content {
         position: relative;
         inset-block-start: 65px;
         padding-inline: 0;
-    }
-
-    header {
+      }
+      header {
         position: absolute;
         inset-block-start: 0;
         inset-inline-start: -208px;
         inline-size: 188px;
-    }
-
-    h1 {
+      }
+      h1 {
         font-size: 60px;
         margin-block-start: 64px;
-    }
+      }
 }
