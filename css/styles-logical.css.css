@@ -45,31 +45,27 @@ body {
 a {
     color: var(--white30);
 }
+
 .header {
-    position: sticky;
-    inset-block-start: -45px;
 }
 
 .header-content {
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline: 20px;
 }
 
 header {
+    margin-block-start: 20px;
     /*--white10: red;*/
     font-size: 14px;
     color: var(--white);
-    position: absolute;
     /* top */
-    inset-block-start: 0;
     /* bottom */
     /* inset-block-end: ; */
     /* left */
-    inset-inline-start: -208px;
     /* right */
     /* inset-inline-end: ; */
-    inline-size: 188px;
 }
+
 
 header li {
     color: var(--white20);
@@ -89,15 +85,15 @@ nav details summary {
     font-weight: bold;
 }
 
-h1,
+/* h1,
 h2,
-h3 {
+h3 { */
     /* font-weight: normal; */
-}
+/* } */
 
-h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+h1 { 
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
     /* font-size: 3.75em; */
 }
@@ -145,7 +141,7 @@ p {
 .hero {
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
     /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/pattern.png); */
-    height: 350px;
+    block-size: 50px;
 }
 
 .section-content img {
@@ -191,9 +187,9 @@ blockquote p {
     display: none;
 }
 
-main {
+/* main { */
     /* margin: auto; */
-}
+/* } */
 
 .wrapper {
     max-inline-size: 902px;
@@ -263,3 +259,32 @@ main {
 .form input::-webkit-input-placeholder {
     color: var(--white20);
 }
+
+@media screen and (min-width:1366px) {
+    .hero {
+        block-size: 350px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+
+    .header-content {
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+
+    header {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+
+    h1 {
+        font-size: 60px;
+    margin-block-start: 64px;
+    }
+}    
