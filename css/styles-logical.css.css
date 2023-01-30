@@ -46,8 +46,7 @@ a {
     color: var(--white30);
 }
 
-.header {
-}
+.header {}
 
 .header-content {
     padding-inline: 20px;
@@ -88,10 +87,10 @@ nav details summary {
 /* h1,
 h2,
 h3 { */
-    /* font-weight: normal; */
+/* font-weight: normal; */
 /* } */
 
-h1 { 
+h1 {
     font-size: 40px;
     margin-block-start: 20px;
     margin-block-end: 16px;
@@ -188,7 +187,7 @@ blockquote p {
 }
 
 /* main { */
-    /* margin: auto; */
+/* margin: auto; */
 /* } */
 
 .wrapper {
@@ -260,7 +259,7 @@ blockquote p {
     color: var(--white20);
 }
 
-@media screen and (min-width:1366px) {
+@media screen and (min-width:768px) {
     .hero {
         block-size: 350px;
     }
@@ -285,6 +284,6 @@ blockquote p {
 
     h1 {
         font-size: 60px;
-    margin-block-start: 64px;
+        margin-block-start: 64px;
     }
-}    
+}
